@@ -15,10 +15,14 @@ enum NetworkingHelperError: Error {
 }
 
 class NetworkingHelper {
+
+    let baseUrl = PListHelper().getInfo(filename: "Url", key: "baseUrl")
+    let queryParam = PListHelper().getInfo(filename: "Url", key: "queryParam")
     
     func startLoad<T>(_ type: T.Type, _ url: String, _ funcSucess: @escaping (T) -> Void,
                       _ funcError: @escaping (NetworkingHelperError) -> Void) throws where T: Decodable {
-        let url = URL(string: url)!
+        
+        let url = URL(string: baseUrl + url + queryParam)!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let _ = error {
                 funcError(NetworkingHelperError.RequestError)
