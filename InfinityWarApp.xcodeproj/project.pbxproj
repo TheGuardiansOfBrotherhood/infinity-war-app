@@ -14,6 +14,8 @@
 		B04837A32094A23C0082F51B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04837A12094A23C0082F51B /* LaunchScreen.storyboard */; };
 		B04837AE2094A23C0082F51B /* InfinityWarAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837AD2094A23C0082F51B /* InfinityWarAppTests.swift */; };
 		B04837B92094A23D0082F51B /* InfinityWarAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837B82094A23D0082F51B /* InfinityWarAppUITests.swift */; };
+		B04837CB2094B0510082F51B /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837CA2094B0510082F51B /* NetworkingHelper.swift */; };
+		B04837CD2094B0F80082F51B /* PListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837CC2094B0F80082F51B /* PListHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B04837B42094A23D0082F51B /* InfinityWarAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfinityWarAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04837B82094A23D0082F51B /* InfinityWarAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityWarAppUITests.swift; sourceTree = "<group>"; };
 		B04837BA2094A23D0082F51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04837CA2094B0510082F51B /* NetworkingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
+		B04837CC2094B0F80082F51B /* PListHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PListHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,10 @@
 		B04837972094A23B0082F51B /* InfinityWarApp */ = {
 			isa = PBXGroup;
 			children = (
+				B04837C92094B0260082F51B /* Models */,
+				B04837C82094AFEE0082F51B /* Controllers */,
+				B04837C72094AFDF0082F51B /* Views */,
+				B04837C62094AF130082F51B /* Helpers */,
 				B04837982094A23B0082F51B /* AppDelegate.swift */,
 				B048379A2094A23B0082F51B /* ViewController.swift */,
 				B048379C2094A23B0082F51B /* Main.storyboard */,
@@ -123,6 +131,36 @@
 				B04837BA2094A23D0082F51B /* Info.plist */,
 			);
 			path = InfinityWarAppUITests;
+			sourceTree = "<group>";
+		};
+		B04837C62094AF130082F51B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B04837CA2094B0510082F51B /* NetworkingHelper.swift */,
+				B04837CC2094B0F80082F51B /* PListHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B04837C72094AFDF0082F51B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B04837C82094AFEE0082F51B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B04837C92094B0260082F51B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04837CD2094B0F80082F51B /* PListHelper.swift in Sources */,
+				B04837CB2094B0510082F51B /* NetworkingHelper.swift in Sources */,
 				B048379B2094A23B0082F51B /* ViewController.swift in Sources */,
 				B04837992094A23B0082F51B /* AppDelegate.swift in Sources */,
 			);
