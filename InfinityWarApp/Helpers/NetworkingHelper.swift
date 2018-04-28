@@ -17,7 +17,7 @@ enum NetworkingHelperError: Error {
 class NetworkingHelper {
     
     func startLoad<T>(_ type: T.Type, _ url: String, _ funcSucess: @escaping (T) -> Void,
-                      _ funcError: @escaping (NetworkingHelperError) -> Void) throws where T : Decodable {
+                      _ funcError: @escaping (NetworkingHelperError) -> Void) throws where T: Decodable {
         let url = URL(string: url)!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let _ = error {
