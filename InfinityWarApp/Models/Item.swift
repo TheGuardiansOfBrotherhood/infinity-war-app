@@ -12,7 +12,7 @@ struct Item: Decodable {
     
     var resourceUri: String
     var name: String
-    var type: String
+    var type: String?
     
     enum CodingKeys: String, CodingKey {
         case resourceUri = "resourceURI"

@@ -16,10 +16,10 @@ struct Character: Decodable {
     var modified: String
     var thumbnail: Thumbnail
     var resourceUri: String
-    var comics: [Comic]
-    var series: [Serie]
-    var stories: [Storie]
-    var events: [Event]
+    var comics: Comic
+    var series: Serie
+    var stories: Storie
+    var events: Event
     var urls: [Url]
     
     enum CodingKeys: String, CodingKey {

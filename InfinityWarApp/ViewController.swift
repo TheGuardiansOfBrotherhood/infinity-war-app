@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-//    var body: [Body] = Body()
+    var body: Body?
     let charactersUrl = PListHelper().getInfo(filename: "Url", key: "characters")
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         do {
             activityIndicator.startAnimating()
-            try NetworkingHelper().startLoad([Body].self, "\(charactersUrl)", funcSucess, funcError)
+            try NetworkingHelper().startLoad(Body.self, "\(charactersUrl)", funcSucess, funcError)
         } catch {
             funcAlert(alertMessage: "Error Body not is Decodable")
             activityIndicator.stopAnimating()
@@ -35,9 +35,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func funcSucess(body: [Body])  {
+    func funcSucess(body: Body)  {
         DispatchQueue.main.async {
-//            self.body = body
+            self.body = body
             // reload component
             // self.tableView.reloadData()
             self.activityIndicator.stopAnimating()
