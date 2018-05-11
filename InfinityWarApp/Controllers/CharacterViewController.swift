@@ -60,7 +60,6 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
     func funcSucess(body: Body)  {
         DispatchQueue.main.async {
@@ -104,7 +103,7 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
         if let result = body {
             let character = result.data.results[selectedIndex]
             cell.nameLabel.text = character.name
-            cell.thumbnailImageView.downloadedFrom(link: "\(character.thumbnail.path).\(character.thumbnail.extension)", contentMode: UIViewContentMode.center)
+            cell.thumbnailImageView.downloadedFrom(link: "\(character.thumbnail.path).\(character.thumbnail.extension)")
         }
         return cell
     }
