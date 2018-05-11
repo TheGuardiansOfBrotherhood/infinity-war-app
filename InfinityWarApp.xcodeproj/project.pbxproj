@@ -34,6 +34,8 @@
 		B04837DF2094DDF00082F51B /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837DE2094DDF00082F51B /* Url.swift */; };
 		B04837E12094E12D0082F51B /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837E02094E12D0082F51B /* Body.swift */; };
 		B04837E32094E3A40082F51B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837E22094E3A40082F51B /* Data.swift */; };
+		B0FC44B520A51EB800020D14 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC44B420A51EB800020D14 /* CharacterViewController.swift */; };
+		B0FC44B720A523F600020D14 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC44B620A523F600020D14 /* CharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		B04837DE2094DDF00082F51B /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
 		B04837E02094E12D0082F51B /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		B04837E22094E3A40082F51B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B0FC44B420A51EB800020D14 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		B0FC44B620A523F600020D14 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		B5D25B6D98A8D10C0459CD6B /* Pods-InfinityWarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityWarApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfinityWarApp/Pods-InfinityWarApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B77AB36E28EFDB300F6634D2 /* Pods_InfinityWarAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfinityWarAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7944696B7BEAFB54C269394 /* Pods-InfinityWarAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityWarAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfinityWarAppTests/Pods-InfinityWarAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		B04837C72094AFDF0082F51B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0FC44B620A523F600020D14 /* CharacterTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				0CA2669D20A3D53E00F19599 /* SignUpController.swift */,
 				0CA2669F20A3D83D00F19599 /* LogInController.swift */,
 				0CA266A120A3D96B00F19599 /* MenuViewController.swift */,
+				B0FC44B420A51EB800020D14 /* CharacterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FC44B520A51EB800020D14 /* CharacterViewController.swift in Sources */,
 				B04837CD2094B0F80082F51B /* PListHelper.swift in Sources */,
 				B04837DD2094DC590082F51B /* Event.swift in Sources */,
 				B04837CB2094B0510082F51B /* NetworkingHelper.swift in Sources */,
@@ -475,6 +482,7 @@
 				B04837E32094E3A40082F51B /* Data.swift in Sources */,
 				B04837E12094E12D0082F51B /* Body.swift in Sources */,
 				B04837DF2094DDF00082F51B /* Url.swift in Sources */,
+				B0FC44B720A523F600020D14 /* CharacterTableViewCell.swift in Sources */,
 				0CA266A220A3D96B00F19599 /* MenuViewController.swift in Sources */,
 				B04837D12094B94A0082F51B /* Character.swift in Sources */,
 				B048379B2094A23B0082F51B /* ViewController.swift in Sources */,
@@ -657,7 +665,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PMHM9PJZ;
 				INFOPLIST_FILE = InfinityWarApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Guardians.Brotherhood.InfinityWarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -673,7 +684,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PMHM9PJZ;
 				INFOPLIST_FILE = InfinityWarApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Guardians.Brotherhood.InfinityWarApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -690,7 +704,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PMHM9PJZ;
 				INFOPLIST_FILE = InfinityWarAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Guardians.Brotherhood.InfinityWarAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -708,7 +726,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PMHM9PJZ;
 				INFOPLIST_FILE = InfinityWarAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Guardians.Brotherhood.InfinityWarAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -725,7 +747,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PMHM9PJZ;
 				INFOPLIST_FILE = InfinityWarAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Guardians.Brotherhood.InfinityWarAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -742,7 +768,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75PMHM9PJZ;
 				INFOPLIST_FILE = InfinityWarAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Guardians.Brotherhood.InfinityWarAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
