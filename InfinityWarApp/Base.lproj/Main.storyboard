@@ -180,12 +180,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amw-0t-HL6">
+                                <rect key="frame" x="328" y="90" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="star_off"/>
+                                <connections>
+                                    <action selector="favoriteAction:" destination="VH8-lW-fs4" eventType="touchUpInside" id="88K-ky-0Wj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cIf-nu-38D"/>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="sJf-27-Ccy" id="viX-Rw-2i5"/>
+                        <outlet property="favoriteButton" destination="amw-0t-HL6" id="9aG-sV-33P"/>
                         <outlet property="nameLabel" destination="RT8-WN-PLt" id="g55-2j-6ZQ"/>
                         <outlet property="thumbnailImageView" destination="h8j-Fn-j0e" id="Uo5-7e-oI0"/>
                     </connections>
@@ -378,4 +387,7 @@
             <point key="canvasLocation" x="936.79999999999995" y="-285.60719640179911"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star_off" width="32" height="32"/>
+    </resources>
 </document>

@@ -43,14 +43,6 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user = Auth.auth().currentUser
-        
-        if let user = user {
-            if let email = user.email {
-                print(email)
-            }
-        }
-        
         characterTableView.delegate = self
         characterTableView.dataSource = self
         
