@@ -32,12 +32,13 @@ extension UIImageView {
 }
 
 class CharacterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-    var body: Body?
-    let charactersUrl = PListHelper().getInfo(filename: "Url", key: "characters")
     
     @IBOutlet weak var characterTableView: UITableView!
+    
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    var body: Body?
+    var characterId: Int = 0
+    let charactersUrl = PListHelper().getInfo(filename: "Url", key: "characters")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,5 +117,26 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.thumbnailImageView.downloadedFrom(link: "\(character.thumbnail.path).\(character.thumbnail.extension)")
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedIndex = indexPath.row
+        if let result = body {
+            let character = result.data.results[selectedIndex]
+            characterId = character.id
+            performSegue(withIdentifier: "showDetailCharacter", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetailCharacter" {
+            if let destination = segue.destination as? DetailCharacterViewController {
+                destination.characterId = characterId
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        characterTableView.reloadData()
     }
 }

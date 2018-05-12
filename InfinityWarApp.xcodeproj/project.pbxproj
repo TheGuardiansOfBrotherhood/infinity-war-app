@@ -34,6 +34,7 @@
 		B04837DF2094DDF00082F51B /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837DE2094DDF00082F51B /* Url.swift */; };
 		B04837E12094E12D0082F51B /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837E02094E12D0082F51B /* Body.swift */; };
 		B04837E32094E3A40082F51B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837E22094E3A40082F51B /* Data.swift */; };
+		B0EC193120A667C900D4C82D /* DetailCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EC193020A667C900D4C82D /* DetailCharacterViewController.swift */; };
 		B0FC44B520A51EB800020D14 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC44B420A51EB800020D14 /* CharacterViewController.swift */; };
 		B0FC44B720A523F600020D14 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FC44B620A523F600020D14 /* CharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		B04837DE2094DDF00082F51B /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
 		B04837E02094E12D0082F51B /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		B04837E22094E3A40082F51B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B0EC193020A667C900D4C82D /* DetailCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewController.swift; sourceTree = "<group>"; };
 		B0FC44B420A51EB800020D14 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		B0FC44B620A523F600020D14 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		B5D25B6D98A8D10C0459CD6B /* Pods-InfinityWarApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityWarApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InfinityWarApp/Pods-InfinityWarApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				0CA2669F20A3D83D00F19599 /* LogInController.swift */,
 				0CA266A120A3D96B00F19599 /* MenuViewController.swift */,
 				B0FC44B420A51EB800020D14 /* CharacterViewController.swift */,
+				B0EC193020A667C900D4C82D /* DetailCharacterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0FC44B520A51EB800020D14 /* CharacterViewController.swift in Sources */,
+				B0EC193120A667C900D4C82D /* DetailCharacterViewController.swift in Sources */,
 				B04837CD2094B0F80082F51B /* PListHelper.swift in Sources */,
 				B04837DD2094DC590082F51B /* Event.swift in Sources */,
 				B04837CB2094B0510082F51B /* NetworkingHelper.swift in Sources */,
