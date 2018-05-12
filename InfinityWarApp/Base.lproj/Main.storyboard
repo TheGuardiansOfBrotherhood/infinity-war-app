@@ -27,7 +27,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rogersilva84@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-IQ-225">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-IQ-225">
                                 <rect key="frame" x="50" y="273" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="eYY-Xc-PUf"/>
@@ -51,7 +51,7 @@
                                     <action selector="LogInAction:" destination="5XB-wZ-hHT" eventType="touchUpInside" id="JeR-ua-0rg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1q2w3e4r" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eu7-tc-rLK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eu7-tc-rLK">
                                 <rect key="frame" x="50" y="343" width="275" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="OUg-UC-OSX"/>
