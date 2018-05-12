@@ -201,27 +201,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-Cn-SRj">
-                                <rect key="frame" x="166" y="449" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log In"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DiI-xy-3of">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-Cn-SRj">
+                                <rect key="frame" x="166" y="449" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fu2-d3-8YB"/>
+                                    <constraint firstAttribute="height" constant="50" id="ge0-XN-h1T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="5XB-wZ-hHT" kind="show" id="icf-5t-SIp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-11-jnK">
-                                <rect key="frame" x="160" y="516" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSF-11-jnK">
+                                <rect key="frame" x="160" y="537" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Nga-K8-fQa"/>
+                                    <constraint firstAttribute="height" constant="50" id="UQy-Wx-pnv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="eaQ-O8-jTr" kind="show" id="GS3-HG-dDk"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V5u-L0-NIE">
+                                <rect key="frame" x="139" y="114" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="COt-It-VzD"/>
+                                    <constraint firstAttribute="height" constant="96" id="R17-NT-GyZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V5u-L0-NIE" firstAttribute="top" secondItem="v6D-aM-7yR" secondAttribute="top" constant="50" id="0sB-qs-zQQ"/>
+                            <constraint firstItem="v6D-aM-7yR" firstAttribute="bottom" secondItem="nSF-11-jnK" secondAttribute="bottom" constant="100" id="E7c-q2-eeW"/>
+                            <constraint firstItem="nSF-11-jnK" firstAttribute="centerX" secondItem="v6D-aM-7yR" secondAttribute="centerX" id="HFa-2E-hFR"/>
+                            <constraint firstItem="Ky7-Cn-SRj" firstAttribute="centerX" secondItem="v6D-aM-7yR" secondAttribute="centerX" id="Hkp-d5-TP6"/>
+                            <constraint firstItem="v6D-aM-7yR" firstAttribute="bottom" secondItem="DiI-xy-3of" secondAttribute="bottom" id="KVI-Ej-PNx"/>
+                            <constraint firstItem="DiI-xy-3of" firstAttribute="centerY" secondItem="v6D-aM-7yR" secondAttribute="centerY" id="X9e-tP-Nic"/>
+                            <constraint firstItem="nSF-11-jnK" firstAttribute="top" secondItem="Ky7-Cn-SRj" secondAttribute="bottom" constant="30" id="dSm-tt-am8"/>
+                            <constraint firstItem="V5u-L0-NIE" firstAttribute="centerX" secondItem="v6D-aM-7yR" secondAttribute="centerX" id="nfC-dS-LZe"/>
+                            <constraint firstItem="DiI-xy-3of" firstAttribute="leading" secondItem="v6D-aM-7yR" secondAttribute="leading" id="rpS-Mz-7KV"/>
+                            <constraint firstItem="DiI-xy-3of" firstAttribute="centerX" secondItem="v6D-aM-7yR" secondAttribute="centerX" id="srS-ng-o0C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v6D-aM-7yR"/>
                     </view>
                     <navigationItem key="navigationItem" id="SGu-kI-rQ8"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="DiI-xy-3of" id="hjO-5s-qDX"/>
+                        <outlet property="marvelImageView" destination="V5u-L0-NIE" id="ZFh-4P-3jr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIf-Sq-dIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
