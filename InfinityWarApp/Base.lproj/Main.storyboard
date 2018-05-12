@@ -59,7 +59,6 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="LogInAction:" destination="5XB-wZ-hHT" eventType="touchUpInside" id="JeR-ua-0rg"/>
-                                    <segue destination="ySD-42-EJ8" kind="show" id="jVw-eR-tik"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,6 +68,7 @@
                     <connections>
                         <outlet property="emailField" destination="K6z-IQ-225" id="sDY-Lj-Qk1"/>
                         <outlet property="passwordField" destination="Eu7-tc-rLK" id="HGp-Ee-RIz"/>
+                        <segue destination="ySD-42-EJ8" kind="show" identifier="showLogin" id="x2L-iP-pOG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tw-XP-dFL" userLabel="First Responder" sceneMemberID="firstResponder"/>

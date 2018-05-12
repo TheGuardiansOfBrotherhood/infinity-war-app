@@ -26,9 +26,23 @@ class LogInController : UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func LogInAction(_ sender: Any) {
-        guard let username = emailField.text else {return}
+        guard let email = emailField.text else {return}
         guard let password = passwordField.text else {return}
+
         
-        print("Aqui" + username + " " + password)
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let error = error {
+                self.funcAlert(alertMessage: error.localizedDescription)
+                return
+            }
+            self.performSegue(withIdentifier: "showLogin", sender: self)
+        }
+    }
+
+    func funcAlert(alertMessage: String) {
+        let alert = UIAlertController(title: "Alert", message: alertMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }

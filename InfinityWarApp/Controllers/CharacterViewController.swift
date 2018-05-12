@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 extension UIImageView {
     func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
@@ -39,6 +41,14 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let user = Auth.auth().currentUser
+        
+        if let user = user {
+            if let email = user.email {
+                print(email)
+            }
+        }
         
         characterTableView.delegate = self
         characterTableView.dataSource = self
