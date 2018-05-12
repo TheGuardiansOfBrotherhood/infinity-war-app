@@ -43,6 +43,16 @@ class CharacterViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.tintColor = UIColor.black
+        
+        let user = Auth.auth().currentUser
+        
+        if let user = user {
+            if let email = user.email {
+                print(email)
+            }
+        }
+        
         characterTableView.delegate = self
         characterTableView.dataSource = self
         

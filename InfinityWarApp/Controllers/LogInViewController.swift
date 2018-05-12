@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class LogInController : UIViewController, UITextFieldDelegate{
+class LogInViewController : UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var emailField: UITextField!

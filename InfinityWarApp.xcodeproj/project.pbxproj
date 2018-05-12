@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C909DA82094F0170038B894 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C909DA72094F0170038B894 /* GoogleService-Info.plist */; };
-		0CA2669E20A3D53E00F19599 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2669D20A3D53E00F19599 /* SignUpController.swift */; };
-		0CA266A020A3D83D00F19599 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2669F20A3D83D00F19599 /* LogInController.swift */; };
+		0CA2669E20A3D53E00F19599 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2669D20A3D53E00F19599 /* SignUpViewController.swift */; };
+		0CA266A020A3D83D00F19599 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2669F20A3D83D00F19599 /* LogInViewController.swift */; };
 		0CA266A220A3D96B00F19599 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA266A120A3D96B00F19599 /* MenuViewController.swift */; };
 		7FD014FD195D99A7190E2039 /* Pods_InfinityWarAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673EAA3BDBFC613B3B66C740 /* Pods_InfinityWarAppUITests.framework */; };
 		8F0C2B646568213057AE8680 /* Pods_InfinityWarAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77AB36E28EFDB300F6634D2 /* Pods_InfinityWarAppTests.framework */; };
 		9AA86235031DFDFAF10317C6 /* Pods_InfinityWarApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BC63C6AB0F15C7C5AB3D97 /* Pods_InfinityWarApp.framework */; };
 		B04837992094A23B0082F51B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04837982094A23B0082F51B /* AppDelegate.swift */; };
-		B048379B2094A23B0082F51B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B048379A2094A23B0082F51B /* ViewController.swift */; };
 		B048379E2094A23B0082F51B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B048379C2094A23B0082F51B /* Main.storyboard */; };
 		B04837A02094A23C0082F51B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B048379F2094A23C0082F51B /* Assets.xcassets */; };
 		B04837A32094A23C0082F51B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04837A12094A23C0082F51B /* LaunchScreen.storyboard */; };
@@ -58,8 +57,8 @@
 
 /* Begin PBXFileReference section */
 		0C909DA72094F0170038B894 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0CA2669D20A3D53E00F19599 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		0CA2669F20A3D83D00F19599 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		0CA2669D20A3D53E00F19599 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0CA2669F20A3D83D00F19599 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0CA266A120A3D96B00F19599 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		11CD04F7841649D26D9A49A9 /* Pods-InfinityWarApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityWarApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfinityWarApp/Pods-InfinityWarApp.release.xcconfig"; sourceTree = "<group>"; };
 		673EAA3BDBFC613B3B66C740 /* Pods_InfinityWarAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfinityWarAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +66,6 @@
 		A58C1FBC86E7C8BF779F4B8C /* Pods-InfinityWarAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfinityWarAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InfinityWarAppUITests/Pods-InfinityWarAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B04837952094A23B0082F51B /* InfinityWarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfinityWarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04837982094A23B0082F51B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B048379A2094A23B0082F51B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B048379D2094A23B0082F51B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B048379F2094A23C0082F51B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04837A22094A23C0082F51B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -220,9 +218,8 @@
 		B04837C82094AFEE0082F51B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B048379A2094A23B0082F51B /* ViewController.swift */,
-				0CA2669D20A3D53E00F19599 /* SignUpController.swift */,
-				0CA2669F20A3D83D00F19599 /* LogInController.swift */,
+				0CA2669D20A3D53E00F19599 /* SignUpViewController.swift */,
+				0CA2669F20A3D83D00F19599 /* LogInViewController.swift */,
 				0CA266A120A3D96B00F19599 /* MenuViewController.swift */,
 				B0FC44B420A51EB800020D14 /* CharacterViewController.swift */,
 				B0EC193020A667C900D4C82D /* DetailCharacterViewController.swift */,
@@ -482,7 +479,7 @@
 				B04837CB2094B0510082F51B /* NetworkingHelper.swift in Sources */,
 				B04837D52094BB920082F51B /* Comic.swift in Sources */,
 				B04837D32094BA9A0082F51B /* Thumbnail.swift in Sources */,
-				0CA2669E20A3D53E00F19599 /* SignUpController.swift in Sources */,
+				0CA2669E20A3D53E00F19599 /* SignUpViewController.swift in Sources */,
 				B04837D72094D4960082F51B /* Item.swift in Sources */,
 				B04837D92094D8850082F51B /* Serie.swift in Sources */,
 				B04837E32094E3A40082F51B /* Data.swift in Sources */,
@@ -491,8 +488,7 @@
 				B0FC44B720A523F600020D14 /* CharacterTableViewCell.swift in Sources */,
 				0CA266A220A3D96B00F19599 /* MenuViewController.swift in Sources */,
 				B04837D12094B94A0082F51B /* Character.swift in Sources */,
-				B048379B2094A23B0082F51B /* ViewController.swift in Sources */,
-				0CA266A020A3D83D00F19599 /* LogInController.swift in Sources */,
+				0CA266A020A3D83D00F19599 /* LogInViewController.swift in Sources */,
 				B04837992094A23B0082F51B /* AppDelegate.swift in Sources */,
 				B04837DB2094DA770082F51B /* Storie.swift in Sources */,
 			);
