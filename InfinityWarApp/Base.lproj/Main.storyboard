@@ -331,7 +331,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="3yw-xF-bOO">
             <objects>
-                <viewController id="eaQ-O8-jTr" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController id="eaQ-O8-jTr" customClass="SignUpViewController" customModule="InfinityWarApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="SingUp" id="gLF-fI-ELh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,10 +411,10 @@
                         <viewLayoutGuide key="safeArea" id="zbr-JV-vN5"/>
                     </view>
                     <connections>
-                        <outlet property="backgroundImageView" destination="lcG-7p-tRh" id="V2E-5v-rJg"/>
-                        <outlet property="emailField" destination="h7R-oC-Cva" id="FjV-Sq-Ali"/>
-                        <outlet property="passwordField" destination="GBO-lM-Xhb" id="ttf-Y0-SLE"/>
-                        <outlet property="userNameField" destination="96s-WB-9pz" id="WwF-UB-nZb"/>
+                        <outlet property="backgroundImageView" destination="lcG-7p-tRh" id="0mL-3s-qpd"/>
+                        <outlet property="emailField" destination="h7R-oC-Cva" id="h8K-kj-nL7"/>
+                        <outlet property="passwordField" destination="GBO-lM-Xhb" id="ILi-HM-cc4"/>
+                        <outlet property="userNameField" destination="96s-WB-9pz" id="RTD-LG-B8Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6t-XP-Thk" userLabel="First Responder" sceneMemberID="firstResponder"/>
