@@ -12,24 +12,24 @@ import Firebase
 import FirebaseAuth
 
 class LogInController : UIViewController, UITextFieldDelegate{
-    
-    
+
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        backgroundImageView.image = UIImage(named: "background-logan")
+        
         emailField.delegate = self
         passwordField.delegate = self
-        
     }
     
     @IBAction func LogInAction(_ sender: Any) {
         guard let email = emailField.text else {return}
         guard let password = passwordField.text else {return}
 
-        
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let error = error {
                 self.funcAlert(alertMessage: error.localizedDescription)

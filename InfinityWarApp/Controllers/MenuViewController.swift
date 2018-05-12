@@ -16,7 +16,7 @@ class MenuViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundImageView.image = UIImage(named: "background")
+        backgroundImageView.image = UIImage(named: "background-hulk")
         marvelImageView.image = UIImage(named: "marvel-icon")
     }
     
