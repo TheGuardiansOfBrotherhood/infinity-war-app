@@ -292,7 +292,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eaQ-O8-jTr" kind="show" id="GS3-HG-dDk"/>
+                                    <segue destination="eaQ-O8-jTr" kind="show" id="d7p-cn-jYT"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V5u-L0-NIE">
@@ -411,10 +411,10 @@
                         <viewLayoutGuide key="safeArea" id="zbr-JV-vN5"/>
                     </view>
                     <connections>
-                        <outlet property="backgroundImageView" destination="lcG-7p-tRh" id="iSc-3p-XTc"/>
-                        <outlet property="emailField" destination="h7R-oC-Cva" id="rQw-3K-wOt"/>
-                        <outlet property="passwordField" destination="GBO-lM-Xhb" id="bo9-s9-OSO"/>
-                        <outlet property="userNameField" destination="96s-WB-9pz" id="kjA-oc-f5E"/>
+                        <outlet property="backgroundImageView" destination="lcG-7p-tRh" id="V2E-5v-rJg"/>
+                        <outlet property="emailField" destination="h7R-oC-Cva" id="FjV-Sq-Ali"/>
+                        <outlet property="passwordField" destination="GBO-lM-Xhb" id="ttf-Y0-SLE"/>
+                        <outlet property="userNameField" destination="96s-WB-9pz" id="WwF-UB-nZb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6t-XP-Thk" userLabel="First Responder" sceneMemberID="firstResponder"/>

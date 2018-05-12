@@ -11,13 +11,13 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class SignUpController: UIViewController, UITextFieldDelegate {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

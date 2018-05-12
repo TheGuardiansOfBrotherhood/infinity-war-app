@@ -34,9 +34,12 @@ class DetailCharacterViewController: UIViewController {
 
         if let user = user {
             ref.child("users").child(user.uid).child("favorites").observeSingleEvent(of: .value, with: { (snapshot) in
-                let value = snapshot.value as! NSArray
-                self.isFavorite = value.contains(self.characterId)
-                self.favoriteButton.isFavorite(self.isFavorite)
+                if let value = snapshot.value as? NSArray {
+                    self.isFavorite = value.contains(self.characterId)
+                    self.favoriteButton.isFavorite(self.isFavorite)
+                } else {
+                    self.ref.child("users/\(user.uid)/favorites").setValue([0])
+                }
             }) { (error) in
                 print(error.localizedDescription)
             }
@@ -117,7 +120,6 @@ class DetailCharacterViewController: UIViewController {
                     self.ref.child("users/\(user.uid)/favorites").setValue(favorites)
                     self.funcAlert(alertMessage: "Update with success")
                 }
-
             }) { (error) in
                 print(error.localizedDescription)
             }
