@@ -16,8 +16,11 @@ class MenuViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         backgroundImageView.image = UIImage(named: "background-hulk")
         marvelImageView.image = UIImage(named: "marvel-icon")
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.black
     }
     
     override func didReceiveMemoryWarning() {

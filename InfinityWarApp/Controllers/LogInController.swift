@@ -27,8 +27,8 @@ class LogInController : UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func LogInAction(_ sender: Any) {
-        guard let email = emailField.text else {return}
-        guard let password = passwordField.text else {return}
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
 
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let error = error {
